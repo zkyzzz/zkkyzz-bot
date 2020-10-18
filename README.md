@@ -18,6 +18,12 @@
 > git clone https://github.com/zkyzzz/zkkyzz-bot
 ```
 
+## Go to the project directory
+
+```bash
+> cd zkkyzz-bot
+```
+
 ## Install the dependencies:
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
