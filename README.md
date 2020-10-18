@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/zkyzzz/zkkyzz-bot/blob/master/media/img/zkyzzz.jpg" width="640" height="302"/>
+<img src="https://github.com/zkyzzz/zkkyzz-bot/blob/master/media/img/zkyzzz.jpg" width="320" height="151"/>
 </p>
 <p align="center">
 <a href="#"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
@@ -52,7 +52,6 @@ Before running this script, first edit [this section](https://github.com/MhankBa
 | Downloader |                     Feature                |
 | :------------: | :---------------------------------------------: |
 |       ✅        |   YouTube mp3/mp4 Downloader                    |
-|       ❌        |   Doujin Downloader         |
 |       ❌        |   Instagram Video/Image Downloader                  |
 |       ❌        |   Facebook Video Downloader                  |
 
@@ -83,7 +82,6 @@ Before running this script, first edit [this section](https://github.com/MhankBa
 |       ✅        |   Get link group                |
 |       ✅        |   Get Admin list                |
 |       ✅        |   Get owner group               |
-|       ✅        |   enable or disable nsfw command|
 |       ✅        |   enable or disable welcome feature|
 
 
