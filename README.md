@@ -17,7 +17,7 @@
 ## Clone this project
 
 ```bash
-> git clone https://github.com/MhankBarBar/whatsapp-bot
+> git clone https://github.com/MhankBarBar/zkkyzz-bot
 ```
 
 ## Install the dependencies:
@@ -30,7 +30,7 @@ you've just cloned!!
 ```
 
 ### Usage
-Before running this script, first edit [this section](https://github.com/MhankBarBar/whatsapp-bot/blob/master/msgHndlr.js#L66) with your WhatsApp number, remember your WhatsApp number!  Not a bot number, then
+Before running this script, first edit [this section](https://github.com/MhankBarBar/zkkyzz-bot/blob/master/msgHndlr.js#L66) with your WhatsApp number, remember your WhatsApp number!  Not a bot number, then
 ```bash
 > npm start
 ```
@@ -41,6 +41,7 @@ Before running this script, first edit [this section](https://github.com/MhankBa
 | :-----------: | :--------------------------------: |
 |       ✅       | Send Photo with Caption          |
 |       ✅       | Reply A Photo                    |
+|       ✅       | Remove Background Sticker        |
 |       ✅       | Image Url                        |
 |       ✅       | Send Video or GIF with Caption   |
 
@@ -104,6 +105,7 @@ Fix Stuck on linux, install google chrome stable:
 > sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 ## Special Thanks to
+* [`MhankBarBar/whatsapp-bot`](https://github.com/MhankBarBar/whatsapp-bot)
 * [`open-wa/wa-automate-nodejs`](https://github.com/open-wa/wa-automate-nodejs)
 * [`YogaSakti/imageToSticker`](https://github.com/YogaSakti/imageToSticker)
 * [`SomnathDas/Whatsapp-Botto-Re`](https://github.com/SomnathDas/Whatsapp-Botto-Re)
