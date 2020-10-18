@@ -63,7 +63,7 @@ module.exports = msgHandler = async (client, message) => {
         const groupAdmins = isGroupMsg ? await client.getGroupAdmins(groupId) : ''
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
-        const ownerNumber = '628xxxxxxxxxx@c.us'
+        const ownerNumber = '6282112540160@c.us'
         const isOwner = sender.id === ownerNumber
         const isBlocked = blockNumber.includes(sender.id)
         const isNsfw = isGroupMsg ? nsfw_.includes(chat.id) : false
@@ -81,13 +81,11 @@ module.exports = msgHandler = async (client, message) => {
             if (isMedia && type === 'image') {
                 const mediaData = await decryptMedia(message, uaOverride)
                 const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
-                await client.sendImageAsSticker(from, imageBase64) .then(() => {
-                    client.reply(from, 'Neh Stickermu, Jangan Lupa Donasi Ya Kk :)')
+                await client.sendImageAsSticker(from, imageBase64)
             } else if (quotedMsg && quotedMsg.type == 'image') {
                 const mediaData = await decryptMedia(quotedMsg, uaOverride)
                 const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`
-                await client.sendImageAsSticker(from, imageBase64) .then(() => {
-                    client.reply(from, 'Neh Stickermu, Jangan Lupa Donasi Ya Kk :)')
+                await client.sendImageAsSticker(from, imageBase64)
             } else if (args.length === 2) {
                 const url = args[1]
                 if (url.match(isUrl)) {
@@ -168,7 +166,7 @@ module.exports = msgHandler = async (client, message) => {
                 client.reply(from, 'Masukkan data bahasa : [id] untuk indonesia, [en] untuk inggris, [jp] untuk jepang, dan [ar] untuk arab', id)
             }
             break
-	case '!nulis2':
+		case '!nulis2':
 	    if (args.length === 1) return client.reply(from, 'Kirim perintah *!nulis2 [teks]*', id)
 	    const nulis = body.slice(8)
 	    client.reply(from, mess.wait, id)
@@ -179,7 +177,7 @@ module.exports = msgHandler = async (client, message) => {
 	    .then((json) => {
 	        client.sendFile(from, json.result, 'tulisan.jpg','');
 	    }).catch(e => client.reply(from, "Error: "+e));
-	    break
+	    break	
         case '!nulis':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!nulis [teks]*', id)
             const text = body.slice(7)
@@ -340,7 +338,7 @@ module.exports = msgHandler = async (client, message) => {
             const { potensi, koordinat, lokasi, kedalaman, magnitude, waktu, map } = bmkg
             const hasil = `*${waktu}*\n📍 *Lokasi* : *${lokasi}*\n〽️ *Kedalaman* : *${kedalaman}*\n💢 *Magnitude* : *${magnitude}*\n🔘 *Potensi* : *${potensi}*\n📍 *Koordinat* : *${koordinat}*`
             client.sendFileFromUrl(from, map, 'shakemap.jpg', hasil, id)
-            break
+            break		
         case '!anime':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!anime [query]*\nContoh : *!anime darling in the franxx*', id)
             const animek = await get.get('https://mhankbarbar.herokuapp.com/api/dewabatch?q=' + body.slice(7)).json()
@@ -798,8 +796,8 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, readme, id)
             break
         case '!info':
-            client.sendLinkWithAutoPreview(from, 'https://github.com/mhankbarbar/whatsapp-bot', info)
-            break
+            client.sendLinkWithAutoPreview(from, 'https://github.com/zkyzzz/zkkyzz-bot', info)
+            break	
         case '!snk':
             client.reply(from, snk, id)
             break
